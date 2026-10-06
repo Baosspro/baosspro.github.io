@@ -1,0 +1,38 @@
+/* AI-generated draft stylesheet. One external file keeps spacing, colors, and
+navigation consistent across all four pages. System fonts avoid extra downloads.
+The layout wraps on small screens and uses relative units for readable text. */
+* { box-sizing: border-box; }
+body { margin: 0; color: #202b36; background: #f5f7fa; font-family: Arial, sans-serif; font-size: 1rem; line-height: 1.7; }
+a { color: #164d87; text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: .15em; }
+a:focus-visible, summary:focus-visible { outline: 3px solid #b65000; outline-offset: 5px; }
+header { background: #16324f; color: white; border-bottom: 5px solid #efbc54; }
+.header-inner { max-width: 1050px; margin: auto; padding: 1.4rem 1.5rem; }
+.brand { color: white; font-size: 1.35rem; font-weight: bold; text-decoration: none; }
+.brand span { font-size: 1rem; font-weight: normal; margin-left: .7rem; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; margin-top: .9rem; }
+header nav a { color: white; padding: .2rem 0; }
+nav a[aria-current="page"] { color: #ffe099; font-weight: bold; text-decoration-thickness: .15em; }
+main { max-width: 1050px; margin: auto; padding: 2.8rem 1.5rem 4rem; min-height: 65vh; }
+h1 { font-size: clamp(2rem, 5vw, 3.8rem); line-height: 1.15; margin: .4rem 0 1.5rem; color: #16324f; }
+h2 { font-size: 1.4rem; line-height: 1.3; color: #16324f; }
+p, li { max-width: 75ch; }
+.intro { font-size: 1.25rem; max-width: 58ch; }
+.eyebrow { font-weight: bold; color: #526170; font-size: .9rem; }
+section, article { margin-top: 2rem; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; }
+.cards section, .bio { background: white; border: 1px solid #cbd4de; padding: 1.5rem; margin: 0; }
+.number { font-size: .95rem; font-weight: bold; color: #526170; }
+.cards h2 { margin-top: .5rem; }
+.note { padding: 1rem; background: #fff3d7; border-left: 4px solid #9c6400; }
+.contents { padding: 1rem; border: 1px solid #cbd4de; background: white; }
+figure { margin: 1.5rem 0; }
+img { max-width: 100%; height: auto; }
+figcaption { color: #526170; font-size: .9rem; }
+details { border: 1px solid #cbd4de; padding: 1rem; background: white; }
+summary { cursor: pointer; font-weight: bold; }
+footer { border-top: 1px solid #cbd4de; padding: 1.3rem 1.5rem; text-align: center; font-size: .9rem; }
+footer p { margin: .25rem auto; }
+.skip { position: absolute; left: -9999px; top: .5rem; padding: .5rem; background: white; }
+.skip:focus { left: .5rem; }
+@media (max-width: 650px) { .cards { grid-template-columns: 1fr; } main { padding-top: 1.8rem; } .brand span { display: block; margin-left: 0; } }
