@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Naser Edreis’s LIS 500 project draft: technology, bias, and computing history.">
-<title>Home | Naser Edreis · LIS 500</title>
-<link rel="stylesheet" href="stylepage.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Naser Edreis’s website about technology, implicit bias, and inclusion.">
+  <title>Home | Naser Edreis</title>
+  <link rel="stylesheet" href="stylepage.css">
 </head>
 <body>
-<!-- AI-generated draft. The welcome page uses three sections to make the available destinations easy to scan. There is no automatic animation or carousel, so visitors control where they go next.
-The page uses standard HTML landmarks so that the navigation, main content, and footer have clear purposes. A skip link lets keyboard users move directly to the main section. All visual rules are stored in stylepage.css instead of being repeated inside the HTML. Relative links keep the pages connected when the folder is published through GitHub Pages. The navigation marks the current page with aria-current, which gives assistive technology more information than color alone. Headings follow a logical order, and paragraphs stay fairly short to support reading on smaller screens. The layout avoids JavaScript because ordinary links and native HTML already provide the interactions this draft needs. These implementation comments were written by AI, not by the student. Student initials must only be added to explanations the student actually authors. -->
-<a class="skip" href="#main">Skip to content</a>
-<header><div class="header-inner"><a class="brand" href="index.html">LIS 500 <span>Code &amp; Power</span></a><nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="about.html">About us</a><a href="resources.html">Resource guide</a><a href="heroes.html">Tech hero</a></nav></div></header>
-<main id="main"><p class="eyebrow">Naser Edreis / First iteration</p><h1>Code, people & power.</h1><p class="intro">A starting point for exploring how technology shapes everyday life, whose experiences it reflects, and who gets left out.</p><p>Welcome to Naser Edreis’s LIS 500 website. This project brings together an introduction, a beginner’s guide to implicit bias, and a look at a figure from computing history.</p><div class="cards"><section><span class="number">01</span><h2>About us</h2><p>Meet Naser, a computer science senior who enjoys soccer, friends, and exploring new places.</p><a href="about.html">Read the introduction</a></section><section><span class="number">02</span><h2>Resource guide</h2><p>Start with implicit bias, learn about intersectionality, and think critically about bias tests.</p><a href="resources.html">Explore the guide</a></section><section><span class="number">03</span><h2>Tech hero</h2><p>A short historical profile of Ada Lovelace and her ideas about computing.</p><a href="heroes.html">Read the profile</a></section></div><section><h2>A question to start with</h2><p>When a technology works well for some people, how can we find out whether it works equally well for everyone?</p></section></main>
-<footer><p>Naser Edreis · LIS 500 · 2026</p><p>AI-generated draft. Biography based on details provided by Naser.</p></footer>
+<!--
+The home page introduces the site before listing its three main sections. An unordered
+list keeps the links simple and easy to find. The pages share one external stylesheet
+named stylepage.css. Keeping the visual rules in one file makes it easier to change the
+whole site without editing each page separately. The navigation uses normal links rather
+than buttons because each link opens a different page. The current page is marked with
+aria-current so its location is available to screen readers as well as sighted readers. A
+skip link appears when it receives keyboard focus and leads directly to the main content.
+The layout uses a single column with a maximum width so paragraphs do not stretch across a
+large screen. Smaller screens keep the same reading order. There are no scripts, animated
+sections, or inline style attributes. Headings divide the content into topics, and the
+footer gives the site a consistent ending.
+-->
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <p class="site-name">Naser Edreis | Code and Power</p>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About us</a>
+      <a href="resources.html">Resource guide</a>
+      <a href="heroes.html">Tech hero</a>
+    </nav>
+  </header>
+  <main id="main">
+    <h1>Welcome to my website</h1>
+    <p>Welcome to my website. My name is Naser Edreis, and I am a senior studying computer science.</p>
+    <p>This site looks at technology and the people it affects. It includes an introduction, resources about implicit bias and intersectionality, and a profile of someone making technology more welcoming.</p>
+    <h2>What is on this site?</h2>
+    <ul>
+    <li>
+    <a href="about.html">About us</a>: a little about me and my interests.</li>
+    <li>
+    <a href="resources.html">Resource guide</a>: explanations, examples, and useful links about bias.</li>
+    <li>
+    <a href="heroes.html">Tech hero</a>: Ayah Bdeir and her work helping more girls explore engineering.</li>
+    </ul>
+    <h2>Something to think about</h2>
+    <p>Technology is used by many different people. How can we make sure more of those people have a chance to help create it?</p>
+  </main>
+  <footer>
+    <p>Naser Edreis | 2026</p>
+  </footer>
 </body>
 </html>

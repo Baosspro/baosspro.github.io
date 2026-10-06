@@ -1,18 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Naser Edreis’s LIS 500 project draft: technology, bias, and computing history.">
-<title>Resource guide | Naser Edreis · LIS 500</title>
-<link rel="stylesheet" href="stylepage.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Naser Edreis’s website about technology, implicit bias, and inclusion.">
+  <title>Resource guide | Naser Edreis</title>
+  <link rel="stylesheet" href="stylepage.css">
 </head>
 <body>
-<!-- AI-generated draft. The resource page uses anchor links so readers can jump to a term. Native details and summary elements make the reflection questions expandable without scripting. Source links are descriptive, and the diagram has a text alternative.
-The page uses standard HTML landmarks so that the navigation, main content, and footer have clear purposes. A skip link lets keyboard users move directly to the main section. All visual rules are stored in stylepage.css instead of being repeated inside the HTML. Relative links keep the pages connected when the folder is published through GitHub Pages. The navigation marks the current page with aria-current, which gives assistive technology more information than color alone. Headings follow a logical order, and paragraphs stay fairly short to support reading on smaller screens. The layout avoids JavaScript because ordinary links and native HTML already provide the interactions this draft needs. These implementation comments were written by AI, not by the student. Student initials must only be added to explanations the student actually authors. -->
-<a class="skip" href="#main">Skip to content</a>
-<header><div class="header-inner"><a class="brand" href="index.html">LIS 500 <span>Code &amp; Power</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About us</a><a href="resources.html" aria-current="page">Resource guide</a><a href="heroes.html">Tech hero</a></nav></div></header>
-<main id="main"><p class="eyebrow">Naser Edreis / First iteration</p><h1>A beginner’s guide to bias.</h1><p class="intro">Short explanations and starting points for students encountering these ideas for the first time.</p><nav class="contents" aria-label="On this page"><a href="#bias">Implicit bias</a><a href="#test">Understanding the test</a><a href="#intersectionality">Intersectionality</a><a href="#discussion">Discussion</a></nav><section id="bias"><h2>1. What is implicit bias?</h2><p>Implicit bias involves associations that can operate without conscious awareness. These associations may differ from the beliefs someone openly expresses. Learning about them can help us question quick judgments.</p><p><a href="https://implicit.harvard.edu/implicit/education.html">Project Implicit: educational resources</a> — background from the research organization behind the Implicit Association Test.</p></section><section id="test"><h2>2. What can a bias test tell us?</h2><p>The assignment uses “IBT.” One widely used tool is the Implicit Association Test, or IAT. It compares how quickly people sort concepts into paired categories. It measures relative associations; a result is not a diagnosis or a complete description of someone’s character.</p><p>Project Implicit cautions that one person’s result is not a reliable prediction of a particular action at a particular moment. A score is a starting point for questions, not a final judgment.</p><p><a href="https://implicit.harvard.edu/implicit/faqs.html">Read the Project Implicit FAQ</a> — useful context about what results can and cannot mean.</p></section><section id="intersectionality"><h2>3. What is intersectionality?</h2><p>Kimberlé Crenshaw developed intersectionality to examine how systems of inequality interact. For example, looking at race and gender separately can overlook the specific discrimination experienced by Black women. The framework asks us to consider how institutions shape these experiences together.</p><p><a href="https://www.law.columbia.edu/faculty/kimberle-w-crenshaw">Meet Kimberlé Crenshaw</a> — Columbia Law School’s introduction to her work.</p><figure><img src="access-diagram.svg" width="760" height="240" alt="Three questions for examining access: Who is included? What barriers interact? What needs to change?"><figcaption>A set of questions for examining access, rather than treating one experience as universal.</figcaption></figure></section><section id="discussion"><h2>4. Draft discussion points</h2><p class="note">AI-generated examples for discussion, not Naser’s personal reflections or test results.</p><p>A coding club could welcome everyone in its description while scheduling every meeting when students with evening jobs cannot attend. An invitation alone does not remove a practical barrier. Asking whose schedules and resources were assumed can reveal where a design needs to change.</p><p>Bias awareness can be useful, but it should lead to a concrete question: what decision will be made differently? In a group project, one possible step is to rotate technical and presentation roles instead of assuming who is best suited to each.</p><details><summary>Questions for your own reflection</summary><ul><li>What did you expect before taking an IBT, and what actually surprised you?</li><li>What are the limits of using one result to describe a person?</li><li>Where have you noticed an access barrier, and what could reduce it?</li></ul></details></section><section><h2>Using sources carefully</h2><p>Check who made a resource, what evidence it uses, and whether its claims have limits. Compare explanations instead of relying on the first result you see.</p><p><a href="https://princetonlibrary.org/guides/misinformation-disinformation-malinformation-a-guide/">Princeton Public Library’s information guide</a> inspired the organization of this page into explanations and annotated resources.</p></section></main>
-<footer><p>Naser Edreis · LIS 500 · 2026</p><p>AI-generated draft. Biography based on details provided by Naser.</p></footer>
+<!--
+The resource page groups terms into sections and includes descriptive source links. The
+reflection questions use native details and summary elements, which work without
+JavaScript. The pages share one external stylesheet named stylepage.css. Keeping the
+visual rules in one file makes it easier to change the whole site without editing each
+page separately. The navigation uses normal links rather than buttons because each link
+opens a different page. The current page is marked with aria-current so its location is
+available to screen readers as well as sighted readers. A skip link appears when it
+receives keyboard focus and leads directly to the main content. The layout uses a single
+column with a maximum width so paragraphs do not stretch across a large screen. Smaller
+screens keep the same reading order. There are no scripts, animated sections, or inline
+style attributes. Headings divide the content into topics, and the footer gives the site a
+consistent ending.
+-->
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <p class="site-name">Naser Edreis | Code and Power</p>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About us</a>
+      <a href="resources.html" aria-current="page">Resource guide</a>
+      <a href="heroes.html">Tech hero</a>
+    </nav>
+  </header>
+  <main id="main">
+    <h1>Implicit bias resource guide</h1>
+    <p>Short explanations and starting points for students encountering these ideas for the first time.</p>
+    <nav aria-label="On this page">
+    <a href="#bias">Implicit bias</a>
+    <a href="#test">Understanding the test</a>
+    <a href="#intersectionality">Intersectionality</a>
+    <a href="#discussion">Discussion</a>
+    </nav>
+    <section id="bias">
+    <h2>1. What is implicit bias?</h2>
+    <p>Implicit bias involves associations that can operate without conscious awareness. These associations may differ from the beliefs someone openly expresses. Learning about them can help us question quick judgments.</p>
+    <p>
+    <a href="https://implicit.harvard.edu/implicit/education.html">Project Implicit: educational resources</a> — background from the research organization behind the Implicit Association Test.</p>
+    </section>
+    <section id="test">
+    <h2>2. What can a bias test tell us?</h2>
+    <p>An implicit bias test (IBT) can be a starting point for learning about automatic associations. One widely used tool is the Implicit Association Test, or IAT. It compares how quickly people sort concepts into paired categories. It measures relative associations; a result is not a diagnosis or a complete description of someone’s character.</p>
+    <p>Project Implicit cautions that one person’s result is not a reliable prediction of a particular action at a particular moment. A score is a starting point for questions, not a final judgment.</p>
+    <p>
+    <a href="https://implicit.harvard.edu/implicit/faqs.html">Read the Project Implicit FAQ</a> — useful context about what results can and cannot mean.</p>
+    </section>
+    <section id="intersectionality">
+    <h2>3. What is intersectionality?</h2>
+    <p>Kimberlé Crenshaw developed intersectionality to examine how systems of inequality interact. For example, looking at race and gender separately can overlook the specific discrimination experienced by Black women. The framework asks us to consider how institutions shape these experiences together.</p>
+    <p>
+    <a href="https://www.law.columbia.edu/faculty/kimberle-w-crenshaw">Meet Kimberlé Crenshaw</a> — Columbia Law School’s introduction to her work.</p>
+    <figure>
+    <img src="access-diagram.svg" width="760" height="240" alt="Three questions for examining access: Who is included? What barriers interact? What needs to change?">
+    <figcaption>A set of questions for examining access, rather than treating one experience as universal.</figcaption>
+    </figure>
+    </section>
+    <section id="discussion">
+    <h2>4. Thoughts and examples</h2>
+    <p>A coding club could welcome everyone in its description while scheduling every meeting when students with evening jobs cannot attend. An invitation alone does not remove a practical barrier. Asking whose schedules and resources were assumed can reveal where a design needs to change.</p>
+    <p>Bias awareness can be useful, but it should lead to a concrete question: what decision will be made differently? In a group project, one possible step is to rotate technical and presentation roles instead of assuming who is best suited to each.</p>
+    <details>
+    <summary>Questions for your own reflection</summary>
+    <ul>
+    <li>What did you expect before taking an IBT, and what actually surprised you?</li>
+    <li>What are the limits of using one result to describe a person?</li>
+    <li>Where have you noticed an access barrier, and what could reduce it?</li>
+    </ul>
+    </details>
+    </section>
+    <section>
+    <h2>Using sources carefully</h2>
+    <p>Check who made a resource, what evidence it uses, and whether its claims have limits. Compare explanations instead of relying on the first result you see.</p>
+    <p>
+    <a href="https://princetonlibrary.org/guides/misinformation-disinformation-malinformation-a-guide/">Princeton Public Library’s information guide</a> inspired the organization of this page into explanations and annotated resources.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Naser Edreis | 2026</p>
+  </footer>
 </body>
 </html>

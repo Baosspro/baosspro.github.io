@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Naser Edreis’s LIS 500 project draft: technology, bias, and computing history.">
-<title>About us | Naser Edreis · LIS 500</title>
-<link rel="stylesheet" href="stylepage.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Naser Edreis’s website about technology, implicit bias, and inclusion.">
+  <title>About us | Naser Edreis</title>
+  <link rel="stylesheet" href="stylepage.css">
 </head>
 <body>
-<!-- AI-generated draft. The biography uses only details supplied by Naser. It does not invent travel experiences, a university affiliation, a personal photograph, or teammates. The list separates interests without adding complex visual controls.
-The page uses standard HTML landmarks so that the navigation, main content, and footer have clear purposes. A skip link lets keyboard users move directly to the main section. All visual rules are stored in stylepage.css instead of being repeated inside the HTML. Relative links keep the pages connected when the folder is published through GitHub Pages. The navigation marks the current page with aria-current, which gives assistive technology more information than color alone. Headings follow a logical order, and paragraphs stay fairly short to support reading on smaller screens. The layout avoids JavaScript because ordinary links and native HTML already provide the interactions this draft needs. These implementation comments were written by AI, not by the student. Student initials must only be added to explanations the student actually authors. -->
-<a class="skip" href="#main">Skip to content</a>
-<header><div class="header-inner"><a class="brand" href="index.html">LIS 500 <span>Code &amp; Power</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html" aria-current="page">About us</a><a href="resources.html">Resource guide</a><a href="heroes.html">Tech hero</a></nav></div></header>
-<main id="main"><p class="eyebrow">Naser Edreis / First iteration</p><h1>Hi, I’m Naser.</h1><section class="bio"><p class="eyebrow">Naser Edreis</p><h2>Senior studying computer science</h2><p>I like playing soccer and spending time with my friends. I want to travel the world, see new places, and explore things I have not experienced before.</p><p>This website is part of my work for LIS 500: Code and Power.</p></section><section><h2>Outside the classroom</h2><ul class="interests"><li>Playing soccer</li><li>Spending time with friends</li><li>Traveling and exploring new things</li></ul></section></main>
-<footer><p>Naser Edreis · LIS 500 · 2026</p><p>AI-generated draft. Biography based on details provided by Naser.</p></footer>
+<!--
+The About page keeps the personal introduction short and uses a list for interests. The
+content uses the biography details provided by Naser. The pages share one external
+stylesheet named stylepage.css. Keeping the visual rules in one file makes it easier to
+change the whole site without editing each page separately. The navigation uses normal
+links rather than buttons because each link opens a different page. The current page is
+marked with aria-current so its location is available to screen readers as well as sighted
+readers. A skip link appears when it receives keyboard focus and leads directly to the
+main content. The layout uses a single column with a maximum width so paragraphs do not
+stretch across a large screen. Smaller screens keep the same reading order. There are no
+scripts, animated sections, or inline style attributes. Headings divide the content into
+topics, and the footer gives the site a consistent ending.
+-->
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <p class="site-name">Naser Edreis | Code and Power</p>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About us</a>
+      <a href="resources.html">Resource guide</a>
+      <a href="heroes.html">Tech hero</a>
+    </nav>
+  </header>
+  <main id="main">
+    <h1>About us</h1>
+    <h2>Naser Edreis</h2>
+    <p>I am a senior studying computer science. I like playing soccer and spending time with my friends.</p>
+    <p>I want to travel the world, see new places, and explore things I have not experienced before.</p>
+    <h2>My interests</h2>
+    <ul>
+    <li>Playing soccer</li>
+    <li>Spending time with friends</li>
+    <li>Traveling and trying new things</li>
+    </ul>
+  </main>
+  <footer>
+    <p>Naser Edreis | 2026</p>
+  </footer>
 </body>
 </html>
